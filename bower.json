@@ -1,0 +1,8 @@
+{
+  "name": "search-query",
+  "version": "0.1.0",
+  "dependencies": {},
+  "devDependencies": {
+    "lodash": "2.x.x"
+  }
+}
