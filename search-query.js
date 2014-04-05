@@ -6,9 +6,9 @@ var searchQuery = (function() {
       yy: {},
       symbols_: {"error":2,"main":3,"expression":4,"orderBy":5,"EOF":6,"ORDER_BY":7,"orderByCommaList":8,"orderValue":9,"IDENTIFIER":10,"orderWay":11,"ASC":12,"DESC":13,"COMMA":14,"condition":15,"LOGICAL_AND":16,"LOGICAL_OR":17,"comparison":18,"value":19,"IN":20,"LPAREN":21,"commaList":22,"RPAREN":23,"LOGICAL_NOT":24,"IS":25,"NULL":26,"BETWEEN":27,"STRING":28,"NUMERIC":29,"TRUE":30,"FALSE":31,"CMP_EQUALS":32,"CMP_NOTEQUALS":33,"CMP_NOTEQUALS_BASIC":34,"CMP_GREATER":35,"CMP_GREATEROREQUAL":36,"CMP_LESS":37,"CMP_LESSOREQUAL":38,"LIKE":39,"$accept":0,"$end":1},
       terminals_: {2:"error",6:"EOF",7:"ORDER_BY",10:"IDENTIFIER",12:"ASC",13:"DESC",14:"COMMA",16:"LOGICAL_AND",17:"LOGICAL_OR",20:"IN",21:"LPAREN",23:"RPAREN",24:"LOGICAL_NOT",25:"IS",26:"NULL",27:"BETWEEN",28:"STRING",29:"NUMERIC",30:"TRUE",31:"FALSE",32:"CMP_EQUALS",33:"CMP_NOTEQUALS",34:"CMP_NOTEQUALS_BASIC",35:"CMP_GREATER",36:"CMP_GREATEROREQUAL",37:"CMP_LESS",38:"CMP_LESSOREQUAL",39:"LIKE"},
-      productions_: [0,[3,3],[5,0],[5,2],[9,2],[11,0],[11,1],[11,1],[8,3],[8,1],[4,1],[4,3],[4,3],[15,3],[15,5],[15,6],[15,3],[15,4],[15,5],[15,6],[15,3],[22,3],[22,1],[19,1],[19,1],[19,1],[19,1],[18,1],[18,1],[18,1],[18,1],[18,1],[18,1],[18,1],[18,1],[18,2]],
+      productions_: [0,[3,3],[5,0],[5,2],[9,2],[11,0],[11,1],[11,1],[8,3],[8,1],[4,1],[4,3],[4,3],[15,3],[15,5],[15,6],[15,3],[15,4],[15,5],[15,6],[15,3],[22,3],[22,1],[19,1],[19,1],[19,1],[19,1],[19,1],[18,1],[18,1],[18,1],[18,1],[18,1],[18,1],[18,1],[18,1],[18,2]],
       performAction: function anonymous(yytext, yyleng, yylineno, yy, yystate /* action[1] */, $$ /* vstack */, _$ /* lstack */
-                                        /**/) {
+        /**/) {
         /* this == yyval */
 
         var $0 = $$.length - 1;
@@ -65,7 +65,7 @@ var searchQuery = (function() {
             break;
           case 26: this.$ = false
             break;
-          case 27: this.$ = $$[$0];
+          case 27:this.$ = yytext;
             break;
           case 28: this.$ = $$[$0];
             break;
@@ -79,13 +79,15 @@ var searchQuery = (function() {
             break;
           case 33: this.$ = $$[$0];
             break;
-          case 34: this.$ = 'like';
+          case 34: this.$ = $$[$0];
             break;
-          case 35: this.$ = 'not like';
+          case 35: this.$ = 'like';
+            break;
+          case 36: this.$ = 'not like';
             break;
         }
       },
-      table: [{3:1,4:2,10:[1,4],15:3,21:[1,5]},{1:[3]},{5:6,6:[2,2],7:[1,9],16:[1,7],17:[1,8]},{6:[2,10],7:[2,10],16:[2,10],17:[2,10],23:[2,10]},{18:10,20:[1,11],24:[1,12],25:[1,13],27:[1,14],32:[1,15],33:[1,16],34:[1,17],35:[1,18],36:[1,19],37:[1,20],38:[1,21],39:[1,22]},{4:23,10:[1,4],15:3,21:[1,5]},{6:[1,24]},{10:[1,4],15:25,21:[1,5]},{10:[1,4],15:26,21:[1,5]},{8:27,9:28,10:[1,29]},{19:30,28:[1,31],29:[1,32],30:[1,33],31:[1,34]},{21:[1,35]},{20:[1,36],27:[1,37],39:[1,38]},{24:[1,40],26:[1,39]},{19:41,28:[1,31],29:[1,32],30:[1,33],31:[1,34]},{28:[2,27],29:[2,27],30:[2,27],31:[2,27]},{28:[2,28],29:[2,28],30:[2,28],31:[2,28]},{28:[2,29],29:[2,29],30:[2,29],31:[2,29]},{28:[2,30],29:[2,30],30:[2,30],31:[2,30]},{28:[2,31],29:[2,31],30:[2,31],31:[2,31]},{28:[2,32],29:[2,32],30:[2,32],31:[2,32]},{28:[2,33],29:[2,33],30:[2,33],31:[2,33]},{28:[2,34],29:[2,34],30:[2,34],31:[2,34]},{16:[1,7],17:[1,8],23:[1,42]},{1:[2,1]},{6:[2,11],7:[2,11],16:[2,11],17:[2,11],23:[2,11]},{6:[2,12],7:[2,12],16:[2,12],17:[2,12],23:[2,12]},{6:[2,3],14:[1,43]},{6:[2,9],14:[2,9]},{6:[2,5],11:44,12:[1,45],13:[1,46],14:[2,5]},{6:[2,13],7:[2,13],16:[2,13],17:[2,13],23:[2,13]},{6:[2,23],7:[2,23],14:[2,23],16:[2,23],17:[2,23],23:[2,23]},{6:[2,24],7:[2,24],14:[2,24],16:[2,24],17:[2,24],23:[2,24]},{6:[2,25],7:[2,25],14:[2,25],16:[2,25],17:[2,25],23:[2,25]},{6:[2,26],7:[2,26],14:[2,26],16:[2,26],17:[2,26],23:[2,26]},{19:48,22:47,28:[1,31],29:[1,32],30:[1,33],31:[1,34]},{21:[1,49]},{19:50,28:[1,31],29:[1,32],30:[1,33],31:[1,34]},{28:[2,35],29:[2,35],30:[2,35],31:[2,35]},{6:[2,16],7:[2,16],16:[2,16],17:[2,16],23:[2,16]},{26:[1,51]},{16:[1,52]},{6:[2,20],7:[2,20],16:[2,20],17:[2,20],23:[2,20]},{9:53,10:[1,29]},{6:[2,4],14:[2,4]},{6:[2,6],14:[2,6]},{6:[2,7],14:[2,7]},{14:[1,55],23:[1,54]},{14:[2,22],23:[2,22]},{19:48,22:56,28:[1,31],29:[1,32],30:[1,33],31:[1,34]},{16:[1,57]},{6:[2,17],7:[2,17],16:[2,17],17:[2,17],23:[2,17]},{19:58,28:[1,31],29:[1,32],30:[1,33],31:[1,34]},{6:[2,8],14:[2,8]},{6:[2,14],7:[2,14],16:[2,14],17:[2,14],23:[2,14]},{19:59,28:[1,31],29:[1,32],30:[1,33],31:[1,34]},{14:[1,55],23:[1,60]},{19:61,28:[1,31],29:[1,32],30:[1,33],31:[1,34]},{6:[2,18],7:[2,18],16:[2,18],17:[2,18],23:[2,18]},{14:[2,21],23:[2,21]},{6:[2,15],7:[2,15],16:[2,15],17:[2,15],23:[2,15]},{6:[2,19],7:[2,19],16:[2,19],17:[2,19],23:[2,19]}],
+      table: [{3:1,4:2,10:[1,4],15:3,21:[1,5]},{1:[3]},{5:6,6:[2,2],7:[1,9],16:[1,7],17:[1,8]},{6:[2,10],7:[2,10],16:[2,10],17:[2,10],23:[2,10]},{18:10,20:[1,11],24:[1,12],25:[1,13],27:[1,14],32:[1,15],33:[1,16],34:[1,17],35:[1,18],36:[1,19],37:[1,20],38:[1,21],39:[1,22]},{4:23,10:[1,4],15:3,21:[1,5]},{6:[1,24]},{10:[1,4],15:25,21:[1,5]},{10:[1,4],15:26,21:[1,5]},{8:27,9:28,10:[1,29]},{10:[1,35],19:30,28:[1,31],29:[1,32],30:[1,33],31:[1,34]},{21:[1,36]},{20:[1,37],27:[1,38],39:[1,39]},{24:[1,41],26:[1,40]},{10:[1,35],19:42,28:[1,31],29:[1,32],30:[1,33],31:[1,34]},{10:[2,28],28:[2,28],29:[2,28],30:[2,28],31:[2,28]},{10:[2,29],28:[2,29],29:[2,29],30:[2,29],31:[2,29]},{10:[2,30],28:[2,30],29:[2,30],30:[2,30],31:[2,30]},{10:[2,31],28:[2,31],29:[2,31],30:[2,31],31:[2,31]},{10:[2,32],28:[2,32],29:[2,32],30:[2,32],31:[2,32]},{10:[2,33],28:[2,33],29:[2,33],30:[2,33],31:[2,33]},{10:[2,34],28:[2,34],29:[2,34],30:[2,34],31:[2,34]},{10:[2,35],28:[2,35],29:[2,35],30:[2,35],31:[2,35]},{16:[1,7],17:[1,8],23:[1,43]},{1:[2,1]},{6:[2,11],7:[2,11],16:[2,11],17:[2,11],23:[2,11]},{6:[2,12],7:[2,12],16:[2,12],17:[2,12],23:[2,12]},{6:[2,3],14:[1,44]},{6:[2,9],14:[2,9]},{6:[2,5],11:45,12:[1,46],13:[1,47],14:[2,5]},{6:[2,13],7:[2,13],16:[2,13],17:[2,13],23:[2,13]},{6:[2,23],7:[2,23],14:[2,23],16:[2,23],17:[2,23],23:[2,23]},{6:[2,24],7:[2,24],14:[2,24],16:[2,24],17:[2,24],23:[2,24]},{6:[2,25],7:[2,25],14:[2,25],16:[2,25],17:[2,25],23:[2,25]},{6:[2,26],7:[2,26],14:[2,26],16:[2,26],17:[2,26],23:[2,26]},{6:[2,27],7:[2,27],14:[2,27],16:[2,27],17:[2,27],23:[2,27]},{10:[1,35],19:49,22:48,28:[1,31],29:[1,32],30:[1,33],31:[1,34]},{21:[1,50]},{10:[1,35],19:51,28:[1,31],29:[1,32],30:[1,33],31:[1,34]},{10:[2,36],28:[2,36],29:[2,36],30:[2,36],31:[2,36]},{6:[2,16],7:[2,16],16:[2,16],17:[2,16],23:[2,16]},{26:[1,52]},{16:[1,53]},{6:[2,20],7:[2,20],16:[2,20],17:[2,20],23:[2,20]},{9:54,10:[1,29]},{6:[2,4],14:[2,4]},{6:[2,6],14:[2,6]},{6:[2,7],14:[2,7]},{14:[1,56],23:[1,55]},{14:[2,22],23:[2,22]},{10:[1,35],19:49,22:57,28:[1,31],29:[1,32],30:[1,33],31:[1,34]},{16:[1,58]},{6:[2,17],7:[2,17],16:[2,17],17:[2,17],23:[2,17]},{10:[1,35],19:59,28:[1,31],29:[1,32],30:[1,33],31:[1,34]},{6:[2,8],14:[2,8]},{6:[2,14],7:[2,14],16:[2,14],17:[2,14],23:[2,14]},{10:[1,35],19:60,28:[1,31],29:[1,32],30:[1,33],31:[1,34]},{14:[1,56],23:[1,61]},{10:[1,35],19:62,28:[1,31],29:[1,32],30:[1,33],31:[1,34]},{6:[2,18],7:[2,18],16:[2,18],17:[2,18],23:[2,18]},{14:[2,21],23:[2,21]},{6:[2,15],7:[2,15],16:[2,15],17:[2,15],23:[2,15]},{6:[2,19],7:[2,19],16:[2,19],17:[2,19],23:[2,19]}],
       defaultActions: {24:[2,1]},
       parseError: function parseError(str,hash){if(hash.recoverable){this.trace(str)}else{throw new Error(str)}},
       parse: function parse(input) {
@@ -226,62 +228,62 @@ var searchQuery = (function() {
 
         parseError:function parseError(str,hash){if(this.yy.parser){this.yy.parser.parseError(str,hash)}else{throw new Error(str)}},
 
-// resets the lexer, sets new input
+        // resets the lexer, sets new input
         setInput:function (input){this._input=input;this._more=this._backtrack=this.done=false;this.yylineno=this.yyleng=0;this.yytext=this.matched=this.match="";this.conditionStack=["INITIAL"];this.yylloc={first_line:1,first_column:0,last_line:1,last_column:0};if(this.options.ranges){this.yylloc.range=[0,0]}this.offset=0;return this},
 
-// consumes and returns one char from the input
+        // consumes and returns one char from the input
         input:function (){var ch=this._input[0];this.yytext+=ch;this.yyleng++;this.offset++;this.match+=ch;this.matched+=ch;var lines=ch.match(/(?:\r\n?|\n).*/g);if(lines){this.yylineno++;this.yylloc.last_line++}else{this.yylloc.last_column++}if(this.options.ranges){this.yylloc.range[1]++}this._input=this._input.slice(1);return ch},
 
-// unshifts one char (or a string) into the input
+        // unshifts one char (or a string) into the input
         unput:function (ch){var len=ch.length;var lines=ch.split(/(?:\r\n?|\n)/g);this._input=ch+this._input;this.yytext=this.yytext.substr(0,this.yytext.length-len-1);this.offset-=len;var oldLines=this.match.split(/(?:\r\n?|\n)/g);this.match=this.match.substr(0,this.match.length-1);this.matched=this.matched.substr(0,this.matched.length-1);if(lines.length-1){this.yylineno-=lines.length-1}var r=this.yylloc.range;this.yylloc={first_line:this.yylloc.first_line,last_line:this.yylineno+1,first_column:this.yylloc.first_column,last_column:lines?(lines.length===oldLines.length?this.yylloc.first_column:0)+oldLines[oldLines.length-lines.length].length-lines[0].length:this.yylloc.first_column-len};if(this.options.ranges){this.yylloc.range=[r[0],r[0]+this.yyleng-len]}this.yyleng=this.yytext.length;return this},
 
-// When called from action, caches matched text and appends it on next action
+        // When called from action, caches matched text and appends it on next action
         more:function (){this._more=true;return this},
 
-// When called from action, signals the lexer that this rule fails to match the input, so the next matching rule (regex) should be tested instead.
+        // When called from action, signals the lexer that this rule fails to match the input, so the next matching rule (regex) should be tested instead.
         reject:function (){if(this.options.backtrack_lexer){this._backtrack=true}else{return this.parseError("Lexical error on line "+(this.yylineno+1)+". You can only invoke reject() in the lexer when the lexer is of the backtracking persuasion (options.backtrack_lexer = true).\n"+this.showPosition(),{text:"",token:null,line:this.yylineno})}return this},
 
-// retain first n characters of the match
+        // retain first n characters of the match
         less:function (n){this.unput(this.match.slice(n))},
 
-// displays already matched input, i.e. for error messages
+        // displays already matched input, i.e. for error messages
         pastInput:function (){var past=this.matched.substr(0,this.matched.length-this.match.length);return(past.length>20?"...":"")+past.substr(-20).replace(/\n/g,"")},
 
-// displays upcoming input, i.e. for error messages
+        // displays upcoming input, i.e. for error messages
         upcomingInput:function (){var next=this.match;if(next.length<20){next+=this._input.substr(0,20-next.length)}return(next.substr(0,20)+(next.length>20?"...":"")).replace(/\n/g,"")},
 
-// displays the character position where the lexing error occurred, i.e. for error messages
+        // displays the character position where the lexing error occurred, i.e. for error messages
         showPosition:function (){var pre=this.pastInput();var c=new Array(pre.length+1).join("-");return pre+this.upcomingInput()+"\n"+c+"^"},
 
-// test the lexed token: return FALSE when not a match, otherwise return token
+        // test the lexed token: return FALSE when not a match, otherwise return token
         test_match:function (match,indexed_rule){var token,lines,backup;if(this.options.backtrack_lexer){backup={yylineno:this.yylineno,yylloc:{first_line:this.yylloc.first_line,last_line:this.last_line,first_column:this.yylloc.first_column,last_column:this.yylloc.last_column},yytext:this.yytext,match:this.match,matches:this.matches,matched:this.matched,yyleng:this.yyleng,offset:this.offset,_more:this._more,_input:this._input,yy:this.yy,conditionStack:this.conditionStack.slice(0),done:this.done};if(this.options.ranges){backup.yylloc.range=this.yylloc.range.slice(0)}}lines=match[0].match(/(?:\r\n?|\n).*/g);if(lines){this.yylineno+=lines.length}this.yylloc={first_line:this.yylloc.last_line,last_line:this.yylineno+1,first_column:this.yylloc.last_column,last_column:lines?lines[lines.length-1].length-lines[lines.length-1].match(/\r?\n?/)[0].length:this.yylloc.last_column+match[0].length};this.yytext+=match[0];this.match+=match[0];this.matches=match;this.yyleng=this.yytext.length;if(this.options.ranges){this.yylloc.range=[this.offset,this.offset+=this.yyleng]}this._more=false;this._backtrack=false;this._input=this._input.slice(match[0].length);this.matched+=match[0];token=this.performAction.call(this,this.yy,this,indexed_rule,this.conditionStack[this.conditionStack.length-1]);if(this.done&&this._input){this.done=false}if(token){return token}else if(this._backtrack){for(var k in backup){this[k]=backup[k]}return false}return false},
 
-// return next match in input
+        // return next match in input
         next:function (){if(this.done){return this.EOF}if(!this._input){this.done=true}var token,match,tempMatch,index;if(!this._more){this.yytext="";this.match=""}var rules=this._currentRules();for(var i=0;i<rules.length;i++){tempMatch=this._input.match(this.rules[rules[i]]);if(tempMatch&&(!match||tempMatch[0].length>match[0].length)){match=tempMatch;index=i;if(this.options.backtrack_lexer){token=this.test_match(tempMatch,rules[i]);if(token!==false){return token}else if(this._backtrack){match=false;continue}else{return false}}else if(!this.options.flex){break}}}if(match){token=this.test_match(match,rules[index]);if(token!==false){return token}return false}if(this._input===""){return this.EOF}else{return this.parseError("Lexical error on line "+(this.yylineno+1)+". Unrecognized text.\n"+this.showPosition(),{text:"",token:null,line:this.yylineno})}},
 
-// return next match that has a token
+        // return next match that has a token
         lex:function lex(){var r=this.next();if(r){return r}else{return this.lex()}},
 
-// activates a new lexer condition state (pushes the new lexer condition state onto the condition stack)
+        // activates a new lexer condition state (pushes the new lexer condition state onto the condition stack)
         begin:function begin(condition){this.conditionStack.push(condition)},
 
-// pop the previously active lexer condition state off the condition stack
+        // pop the previously active lexer condition state off the condition stack
         popState:function popState(){var n=this.conditionStack.length-1;if(n>0){return this.conditionStack.pop()}else{return this.conditionStack[0]}},
 
-// produce the lexer rule set which is active for the currently active lexer condition state
+        // produce the lexer rule set which is active for the currently active lexer condition state
         _currentRules:function _currentRules(){if(this.conditionStack.length&&this.conditionStack[this.conditionStack.length-1]){return this.conditions[this.conditionStack[this.conditionStack.length-1]].rules}else{return this.conditions["INITIAL"].rules}},
 
-// return the currently active lexer condition state; when an index argument is provided it produces the N-th previous condition state, if available
+        // return the currently active lexer condition state; when an index argument is provided it produces the N-th previous condition state, if available
         topState:function topState(n){n=this.conditionStack.length-1-Math.abs(n||0);if(n>=0){return this.conditionStack[n]}else{return"INITIAL"}},
 
-// alias for begin(condition)
+        // alias for begin(condition)
         pushState:function pushState(condition){this.begin(condition)},
 
-// return the number of states currently on the stack
+        // return the number of states currently on the stack
         stateStackSize:function stateStackSize(){return this.conditionStack.length},
         options: {"case-insensitive":true},
         performAction: function anonymous(yy,yy_,$avoiding_name_collisions,YY_START
-                                          /**/) {
+          /**/) {
 
           var YYSTATE=YY_START;
           switch($avoiding_name_collisions) {
@@ -445,6 +447,20 @@ var searchQuery = (function() {
       }
 
       return query;
+    },
+
+    validate: function(query) {
+      try {
+        this.parse(query);
+      } catch(exception) {
+        var exceptionParts = exception.message.split('\n');
+        return {
+          errorLocation: exceptionParts[1] + '\n' + exceptionParts[2],
+          error: exceptionParts[3]
+        }
+      }
+
+      return true;
     }
   };
 }());

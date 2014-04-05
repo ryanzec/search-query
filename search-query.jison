@@ -50,7 +50,7 @@ false                                            return 'FALSE'
 
 main
   : expression orderBy EOF
-    { return {search: $1, order: $2}; } 
+    { return {search: $1, order: $2}; }
   ;
 
 orderBy
@@ -60,7 +60,7 @@ orderBy
 
 orderValue
   : IDENTIFIER orderWay { $$ = {field: $1, way: $2}; }
-  ; 
+  ;
 
 orderWay
   : { $$ = 'asc';}
@@ -100,6 +100,7 @@ value
   | NUMERIC { $$ = Number(yytext) } /* output should return a true number, not a number as a string */
   | TRUE { $$ = true }
   | FALSE { $$ = false }
+  | IDENTIFIER {$$ = yytext; }
   ;
 
 comparison

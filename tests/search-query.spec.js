@@ -7,6 +7,13 @@ describe('search query', function() {
         expect(searchQuery.parse(query).search[0].value).to.be.a('string');
       });
 
+      it('identifier', function() {
+        var query = "status = Active";
+
+        expect(searchQuery.parse(query).search[0].value).to.be.a('string');
+        expect(searchQuery.parse(query).search[0].value).to.equal('Active');
+      });
+
       it('number', function() {
         var query = "loginCount > 10";
 
@@ -303,7 +310,7 @@ describe('search query', function() {
 
     it('should thrown error on invalid query format', function() {
       var query = 'firstName = ';
-      
+
       expect(function() {
         searchQuery.parse(query);
       }).to.throw(Error);
@@ -669,4 +676,22 @@ describe('search query', function() {
       expect(searchQuery.compile(queryJson)).to.equal(expected);
     });
   });
+
+  describe('validating', function() {
+    it('should validate valid query', function() {
+      var query = "firstName = 'john'";
+
+      expect(searchQuery.validate(query)).to.be.true;
+    });
+
+    it('should not validate invalid query', function() {
+      var query = "firstName = 'john";
+      var expected = {
+        errorLocation: 'firstName = \'john\n------------^',
+        error: "Expecting 'IDENTIFIER', 'STRING', 'NUMERIC', 'TRUE', 'FALSE', got 'INVALID'"
+      };
+
+      expect(searchQuery.validate(query)).to.deep.equal(expected);
+    });
+  })
 });
