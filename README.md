@@ -56,6 +56,7 @@ You can use the following value types (the JSON also returns them in the same va
 - number: ```statusId = 1```
 - null: ```updateTimestamp is null```
 - boolean: ```isAdmin = false or isSuperUser = true```
+- identifier: ```status = Active``` (stored as string)
 
 ### Supported Comparison Operators
 
