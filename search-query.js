@@ -455,7 +455,10 @@ var searchQuery = (function() {
       } catch(exception) {
         var exceptionParts = exception.message.split('\n');
         return {
-          errorLocation: exceptionParts[1] + '\n' + exceptionParts[2],
+          lineNumber: parseInt(exceptionParts[0].split(' line ')[1]),
+          characterNumber: exceptionParts[2].length,
+          queryLocation: exceptionParts[1],
+          queryIndicator: exceptionParts[2],
           error: exceptionParts[3]
         }
       }
