@@ -687,7 +687,10 @@ describe('search query', function() {
     it('should not validate invalid query', function() {
       var query = "firstName = 'john";
       var expected = {
-        errorLocation: 'firstName = \'john\n------------^',
+        lineNumber: 1,
+        characterNumber: 13,
+        queryLocation: 'firstName = \'john',
+        queryIndicator: '------------^',
         error: "Expecting 'IDENTIFIER', 'STRING', 'NUMERIC', 'TRUE', 'FALSE', got 'INVALID'"
       };
 
