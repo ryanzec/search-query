@@ -54,7 +54,7 @@ main
   ;
 
 orderBy
-  : { $$ = null;}
+  : { $$ = null; }
   | ORDER_BY orderByCommaList { $$ = $2; }
   ;
 
@@ -75,8 +75,12 @@ orderByCommaList
 
 expression
   : condition { $$ = [$1]; }
-  | expression LOGICAL_AND condition { $$ = $1; $3.connector='and'; $1.push($3); }
-  | expression LOGICAL_OR condition { $$ = $1; $3.connector='or'; $1.push($3); }
+  | expression expressionConnector condition { $$ = $1; $3.connector=$2; $1.push($3); }
+  ;
+
+expressionConnector
+  : LOGICAL_AND { $$ = 'and'; }
+  | LOGICAL_OR { $$ = 'or'; }
   ;
 
 condition
